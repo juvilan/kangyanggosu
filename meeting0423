@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4월 강양고수 회의 자료 (2025. 4. 23)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 1rem;
+            background-color: #f6f8fa;
+            color: #24292e;
+        }
+        .container {
+            max-width: 900px;
+            margin: 1rem auto;
+            background-color: #ffffff;
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3, h4 {
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            font-weight: 600;
+        }
+        h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            border-bottom: 2px solid #eaecef;
+            padding-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.4em;
+            margin-top: 2.5em;
+        }
+        h3 {
+            font-size: 1.25rem;
+        }
+        p, li {
+            font-size: 1rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #586069;
+            margin-top: 0;
+        }
+        .table-wrapper {
+            overflow-x: auto;
+            margin-bottom: 1rem;
+            border: 1px solid #d1d5da;
+            border-radius: 6px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px; /* 테이블의 최소 너비 지정 */
+        }
+        th, td {
+            border: 1px solid #d1d5da;
+            padding: 0.75rem;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f6f8fa;
+            font-weight: 600;
+        }
+        td {
+            background-color: #fff;
+        }
+        ol, ul {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .note {
+            font-size: 0.9rem;
+            color: #586069;
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+            padding: 0.8rem 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .info-box {
+            border: 1px solid #d1d5da;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+        .info-box-header {
+            background-color: #f6f8fa;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            border-bottom: 1px solid #d1d5da;
+        }
+        .info-box-content {
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>2025학년도 고교학점제 현장 안착을 위한<br>4월 강양고수 회의 자료 </h1>
+        <p class="subtitle"><strong>일시:</strong> 2025. 4. 23. <br><strong>주관:</strong> 강서양천교육지원청 중등교육지원과 </p>
+
+        <h2>1. 2025 강서양천 고교학점제 운영 </h2>
+        
+        <h3>1.1. 고교학점제 협의체 구성·운영: 「강양고수」 </h3>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>일자</th>
+                        <th>내용</th>
+                        <th>장소</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3. 31.(월)</td>
+                        <td>고교학점제·최성보·학교현안 공유, 나이스 활용 안내</td>
+                        <td>지원청</td>
+                    </tr>
+                    <tr>
+                        <td>4. 23.(수)</td>
+                        <td>고교학점제 공간 활용, 학교간공동교육과정, 서울온라인학교</td>
+                        <td>공항고</td>
+                    </tr>
+                    <tr>
+                        <td>5. 21.(수)</td>
+                        <td>진로 학업 설계지도(학생 맞춤형 교과 선택 지도, 과정 등), 최성보(예방·보충지도·정서 지원 등) 운영 및 나이스 출결·성적처리</td>
+                        <td>마포고</td>
+                    </tr>
+                    <tr>
+                        <td>6. 18.(수)</td>
+                        <td>최성보(예방·보충지도 등), 학교생활기록부 기록·관리(고1 기준)</td>
+                        <td>신목고</td>
+                    </tr>
+                    <tr>
+                        <td>7. 09.(수)</td>
+                        <td>고교학점제 및 최성보 운영 콘퍼런스(최성보 지원단 연계 확대 운영)</td>
+                        <td>지원청</td>
+                    </tr>
+                    <tr>
+                        <td>8. 27.(수)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="note">※ 학교생활기록부·평가 담당 장학사와 협업하여 학교 현장 지원 </p>
+        
+        <h4>상호 컨설팅 소그룹 구성 </h4>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>소그룹</th>
+                        <th>학교</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 (9교)</td>
+                        <td>금옥여고, 신목고, 신서고, 목동고, 백암고, 양천고, 양정고, 진명여고, 한가람고 </td>
+                    </tr>
+                    <tr>
+                        <td>2 (10교)</td>
+                        <td>등촌고, 세현고, 강서고, 경복여자고, 대일고, 동양고, 마포고, 명덕외국어고, 영일고, 한광고 </td>
+                    </tr>
+                    <tr>
+                        <td>3 (10교)</td>
+                        <td>공항고, 수명고, 광영고, 광영여고, 덕원여고, 덕원예고, 명덕고, 명덕여고, 한서고, 화곡고 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>1.2. 지원단 구성·운영 </h3>
+        <ul>
+            <li><strong>강양고수 (교무부장, 교육과정운영부장 중심):</strong> 고교학점제·최성보 운영 전반 관리 </li>
+            <li><strong>최소 성취수준 보장지도 (운영체제 및 교과지도 분과):</strong> 과목별 최성보 운영 사례 </li>
+            <li><strong>현장 모니터링단:</strong> 현안 파악 및 지원 </li>
+        </ul>
+
+        <h3>1.3. 학교로 찾아가는 맞춤형 컨설팅 운영 </h3>
+        <p>4월 30일 공문으로 안내될 예정입니다. </p>
+        
+        <h3>1.4. 학점제형 지역기관 연계 특화 교육과정 운영 </h3>
+        <p>4월 22일 공문으로 안내되었습니다. </p>
+        <div class="info-box">
+            <div class="info-box-header">사업 주제: I & AI </div>
+            <div class="info-box-content">
+                <p>「I & AI를 바탕으로 빠른 속도로 변하고, 불확실하며, 복잡하고, 불명확한 미래사회를 대비」 </p>
+                <ul>
+                    <li><strong>I (나):</strong> 자신의 성장과 웰빙을 위한 주도적 능력(student-agency), 상호 협조적인 관계성 구축(co-agency), 교육과정을 재구성하여 수업과 평가를 창의적으로 디자인하는 역량(teacher-agency) 함양 및 마음건강 챙김 </li>
+                    <li><strong>AI:</strong> 미래교육을 열어갈 디지털 리터러시(디지털 기기 활용, 정보 생성, 의사소통, 윤리 등) 강화 </li>
+                </ul>
+            </div>
+        </div>
+
+        <h4>특강 </h4>
+        <div class="table-wrapper">
+            <table>
+                 <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>(특강 1) 진로 연계</th>
+                        <th>(특강 2) I & AI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>일시</strong></td>
+                        <td>2025. 5. 17.(토) 10:30~12:00 </td>
+                        <td>2025. 5. 28.(수) 16:00~17:30 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>장소</strong></td>
+                        <td>온라인(줌)<br><small>※ 줌 주소는 신청 확정자에게 별도 문자 안내</small> </td>
+                        <td>강서양천교육지원청 4층 강당<br><small>※ 양천구 월정로 269, 화곡역 7번 출구 도보 약 15분, 주차 및 주차비 지원 불가</small> </td>
+                    </tr>
+                    <tr>
+                        <td><strong>내용</strong></td>
+                        <td>세계를 무대로 개척하는 진로 및 일상 생활 활용 기초 통계 실습 (Descriptive statistics, significance tests, and T-tests in R) </td>
+                        <td>AI 시대, 나를 결정하는 힘: 자기결정성과 진로의 미래 - 자율성·유능성·관계성 중심으로 미래 사회에서 주도적 삶 탐색 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>강사</strong></td>
+                        <td>홍혜리 (California State University, Fresno 교수) </td>
+                        <td>이정민 (한양대학교 러닝사이언스과 겸임교수) </td>
+                    </tr>
+                    <tr>
+                        <td><strong>대상</strong></td>
+                        <td colspan="2">관내 중·고등학교 학생 중 희망자 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>기타</strong></td>
+                        <td colspan="2">특강 참석 학생 대상으로 '학교생활기록부 특강 이수 사항' 기재 가능 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="note">※ 세부 사항은 운영 상황에 따라 변경될 수 있음 </p>
+
+        <h4>학교로 찾아가는 프로그램 </h4>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>환경관리공단 연계</th>
+                        <th>명지대학교 연계</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>연계 기관</strong></td>
+                        <td>환경관리공단 </td>
+                        <td>명지대학교 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>기간</strong></td>
+                        <td colspan="2">2025. 6. 2.(월) ~ 10. 31.(금) 중 학교 희망 일시<br><small>※ 학교와 연계 기관 담당자와 일정 협의 후 확정</small> </td>
+                    </tr>
+                    <tr>
+                        <td><strong>장소</strong></td>
+                        <td colspan="2">대상교 교실 또는 지정 장소 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>방법</strong></td>
+                        <td colspan="2">학교로 찾아가는 대면 교육 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>대상</strong></td>
+                        <td>관내 중·고등학교 희망교 20개 학급 또는 동아리 (5개 프로그램 X 4개 학급) </td>
+                        <td>관내 중·고등학교 희망교 39개 학급 또는 동아리 (13개 프로그램 X 3개 학급) </td>
+                    </tr>
+                    <tr>
+                        <td><strong>교육시간</strong></td>
+                        <td>학급당 1차시(50분) </td>
+                        <td>학급당 2차시(100분) </td>
+                    </tr>
+                    <tr>
+                        <td><strong>내용</strong></td>
+                        <td>화학, 환경 관련 특강 </td>
+                        <td>심리학, 경제학, AI 등 관련 특강 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>강사</strong></td>
+                        <td>환경관리공단 강사 </td>
+                        <td>명지대학교 관련 학과 교수 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="note">※ 세부 사항은 운영 상황에 따라 변경될 수 있음 </p>
+
+        <h3>1.5. 사례 나눔 자료집 제작 </h3>
+        <p>2025 강서양천 고교학점제 운영 사례 나눔 자료집을 제작할 예정입니다. </p>
+        
+        <h2>2. 운영 사례 공유 (3월 공유 내용 재안내) </h2>
+        <ol>
+            <li><strong>강서고:</strong> 신입생 개인정보 동의를 받을 때 예방지도 동의서를 같이 받음 </li>
+            <li><strong>광영고:</strong> 화7, 목7 공강프로그램을 학생의 희망에 따라 운영하고자 함(공캠, 최성보, 기초학력, 학교특색프로그램, 창체 등) </li>
+            <li><strong>금옥여고:</strong> 보충지도 시 교육과정 교과목 선택과 연계한 정서적 지원 프로그램 실시 </li>
+            <li><strong>대일고:</strong> ① 학급에서 담임교사의 안내 후 예방지도 참여 동의서 받음 ② 학습 플래너를 활용한 개별 멘토링(정서적 지원 프로그램 방안)으로 예방지도 실시 </li>
+            <li><strong>덕원여고:</strong> 2024학년도 1학년 국, 수, 영, 한국사, 통사, 통과 6개 과목에서 최성보 예방지도 운영함 </li>
+            <li><strong>동양고:</strong> 학기당 1학점 16시수 확보 위해 학사일정 작성 시, 요일별 수업 시수를 고르게 안배하는 수업대체일 활용 </li>
+            <li><strong>등촌고:</strong> ① 정서 지원 프로그램을 교무부에서 4시간 주관하여 다과목에 적용되도록 함 ② 출결관리를 위해 출석부 적극 활용: 담임교사가 출석부에 미리 표시, 교과교사와 공유 </li>
+            <li><strong>마포고:</strong> 2학년 공강 프로그램을 특색 활동으로 운영: 정규 수업과 동일하게 편성하여 교사별 특색 활동으로 운영, 동시간 시간표 편성으로 학생들이 자유롭게 프로그램 선택 </li>
+            <li><strong>명덕여고:</strong> 공강1: 1학기 모둠독서(진로 영역 기록), 2학기 개인독서(자율 영역 기록) 공강2: 1학기(모의고사 기출문제 국어), 2학기(모의고사 기출문제 영어) </li>
+            <li><strong>명덕외고:</strong> 1학년 교과별 최성보 계획서 수합 후 미도달 예상 학생 파악 계획 수립 완료 </li>
+            <li><strong>백암고:</strong> '출결 점검의 날' 운영 예정 </li>
+            <li><strong>신목고·세현고:</strong> 고교학점제 선도학교·시범운영 학교로 안정적인 학점제 운영 실시 </li>
+            <li><strong>신서고:</strong> ① 예방지도 대상 학생 선정: 3월 학력평가, 학생 성취도 및 3월 출석률 고려 ② 정서적 지원 프로그램: 학기 말 보충지도 운영 시 공통적으로 진행 예정 </li>
+            <li><strong>양천고:</strong> ① 최성보 예방지도를 '미래비전캠프'와 연계 운영 ② 1학년 공강: '창의독서'(주1회) 운영 </li>
+            <li><strong>진명여고:</strong> ① 학생 개인차를 고려한 과제 부여, 리로스쿨을 이용하여 과제 제출 ② 전문상담교사가 정서적 지원 프로그램 3시수 전담 운영 </li>
+            <li><strong>한서고:</strong> '교육과정의 날' 운영: 선배들이 직접 자신이 듣고 있는 과목에 대해 설명하고, 추가로 담임 교사와 충분한 상담 진행 </li>
+            <li><strong>화곡고:</strong> 교과 담당 교사가 수시로 고교학점제 및 최성보 설명 진행함 </li>
+        </ol>
+        
+        <h2>3. 자료 공유 및 운영 현황 </h2>
+        
+        <h3>자료 공유 </h3>
+        <ul>
+            <li><strong>서울고교학점제지원센터 (<a href="https://seoulhsc.sen.go.kr" target="_blank">https://seoulhsc.sen.go.kr</a>):</strong> 
+                <ul>
+                    <li>통합자료실 &rarr; #15 2024학년도 공유캠퍼스 운영 사례집 (강서양천 p. 127~) </li>
+                    <li>통합자료실 &rarr; #12 고교학점제 운영 안내서 탑재 </li>
+                    <li>최소성취수준보장지도 &rarr; 지원 자료 </li>
+                </ul>
+            </li>
+            <li><strong>서울특별시교육청교육연수원:</strong> 고교학점제 관련 다양한 연수 자료 제공 </li>
+        </ul>
+
+        <h3>[강서양천] 학교간 공동교육과정 운영 현황 </h3>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>학교</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>공유형 선택 교육과정 (공유)캠퍼스</strong></td>
+                        <td>
+                            <strong>강서양천 1권역:</strong> 강서고, 대일고, 영일고<br>
+                            <strong>강서양천 2권역:</strong> 공항고, 명덕여고, 세현고, 한서고<br>
+                            <strong>강서양천 3권역:</strong> 광영고, 광영여고 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>거점형 선택 교육과정</strong></td>
+                        <td>덕원여고, 동양고, 명덕고, 서울영상고, 세현고, 한서고, 화곡보건경영고 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>온라인 (거점형/공유형)</strong></td>
+                        <td>
+                            <strong>거점형:</strong> 서울영상고, 한서고<br>
+                            <strong>공유형:</strong> 공항고, 명덕여고, 한서고 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>교과특성화</strong></td>
+                        <td>강서고, 공항고, 대일고, 명덕여고, 영일고, 한서고 </td>
+                    </tr>
+                    <tr>
+                        <td><strong>서울온라인학교</strong></td>
+                        <td>공항고, 덕원여고, 명덕여고, 한서고 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h2>4. 학교 현안 논의 사항 </h2>
+        <ol>
+            <li><strong>나이스 출결 처리 시스템 개선:</strong> 본청에서 교육부로 내용 전달하여 검토 중 </li>
+            <li><strong>최성보 활용 콘텐츠 및 운영사례 보급:</strong> 교육부에서 개발 중 </li>
+            <li><strong>다양한 과목 강사 인력풀 제공:</strong> 서울교육일자리포털 업데이트 필요 </li>
+            <li><strong>1학점 당 16회 수업 시수 확보의 어려움:</strong>
+                <p class="note">정기 고사 등 학교 교육계획에 의한 평가는 해당 과목의 수업 시수에 포함 가능하며, 국가 및 교육청 주관 평가 시간도 교과 이수 시간으로 인정 가능함. (운영 사례 요청) </p>
+            </li>
+            <li><strong>학생 선택 프로그램 변경 요청 시기 기준 필요:</strong>
+                <p class="note">학교 지침에 따르도록 명시되어 있으나, 기간 후 변경을 요구하는 학생이 있어 운영 사례 요청 </p>
+            </li>
+            <li><strong>과목 학습 심화를 위한 학점 운영:</strong> 3학점보다 4학점 운영이 효과적인지에 대한 운영 사례 요청 </li>
+            <li><strong>고교학점제와 대입(2028학년도) 연계성 부족</strong> </li>
+            <li><strong>담임 교사와의 연계 부족:</strong> 학생의 진로·적성에 맞는 프로그램 선택으로 담임 교사의 수업을 듣지 못하는 학생 발생 시, '행동특성 및 종합의견' 작성 연계 부족 </li>
+            <li>그럼에도 불구하고, 고교학점제의 안정적 운영을 위한 고견을 부탁드립니다. </li>
+        </ol>
+
+    </div>
+</body>
+</html>
