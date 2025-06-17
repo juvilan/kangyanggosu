@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025학년도 교육과정 업무 플로우 - 반응형</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Malgun Gothic', Tahoma, sans-serif;
+            background: #f4f7f9; /* 배경색을 약간 추가하여 콘텐츠를 부각 */
+            color: #333;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        
+        .document {
+            width: 95%;
+            max-width: 1100px; /* PC에서 너무 넓어지지 않도록 최대 너비 설정 */
+            margin: 30px auto; /* 상하 여백 추가 */
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* 입체감을 위한 그림자 효과 */
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 3px solid #4facfe;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%);
+        }
+        
+        .header h1 {
+            font-size: 26px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .header p {
+            font-size: 16px;
+            color: #34495e;
+        }
+        
+        .phase-section {
+            margin-bottom: 30px;
+        }
+        
+        .phase-title {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .timeline-item {
+            background: #fafafa;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px; /* 내부 여백을 약간 늘림 */
+            margin-bottom: 12px;
+            position: relative;
+            border-left: 4px solid #667eea;
+        }
+        
+        .timeline-item.highlight {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+            border-left: 4px solid #ff4757;
+            border: 1px solid #ff4757; /* 하이라이트 테두리 수정 */
+        }
+        
+        .timeline-item.highlight .item-content {
+            font-weight: bold;
+            color: #c44569;
+        }
+        
+        .timeline-item.highlight::before {
+            content: "🎯 핵심";
+            position: absolute;
+            top: -10px;
+            right: 10px;
+            background: #ff4757;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .item-left {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap; /* 작은 화면에서 태그들이 줄바꿈되도록 */
+        }
+        
+        .item-order {
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 12px;
+            min-width: 40px;
+            text-align: center;
+        }
+        
+        .timeline-item.highlight .item-order {
+            background: #ff4757;
+        }
+        
+        .item-date {
+            background: #34495e;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .item-manager {
+            color: #666;
+            font-size: 12px;
+            background: #e9ecef;
+            padding: 4px 10px;
+            border-radius: 10px;
+        }
+        
+        .item-content {
+            font-size: 15px; /* 내용 폰트 약간 키움 */
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .item-note {
+            background: #fff3cd;
+            border-left: 3px solid #ffc107;
+            padding: 10px 15px;
+            font-size: 13px;
+            color: #856404;
+            border-radius: 0 5px 5px 0;
+            line-height: 1.5;
+        }
+        
+        .summary-section {
+            margin-top: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8f5e8 100%);
+            border: 2px solid #28a745;
+            border-radius: 10px;
+        }
+        
+        .summary-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 반응형 그리드 */
+            gap: 20px;
+        }
+        
+        .summary-item {
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .summary-item h4 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+        
+        .summary-item p {
+            color: #555;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        
+        .flow-diagram {
+            margin: 30px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .flow-step {
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        
+        .flow-step.highlight {
+            background: #ff4757;
+        }
+        
+        .flow-arrow {
+            color: #667eea;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* --- 모바일 반응형 스타일 (768px 이하) --- */
+        @media (max-width: 768px) {
+            body {
+                font-size: 15px; /* 모바일에서 기본 폰트 크기 약간 키움 */
+            }
+
+            .document {
+                width: 100%;
+                margin: 0;
+                padding: 20px;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            .header h1 {
+                font-size: 22px;
+            }
+            .header p {
+                font-size: 15px;
+            }
+
+            .phase-title {
+                font-size: 16px;
+            }
+
+            .item-header {
+                flex-direction: column; /* 헤더 아이템 수직 정렬 */
+                align-items: flex-start; /* 왼쪽 정렬 */
+                gap: 10px;
+            }
+
+            .item-content {
+                font-size: 14px;
+            }
+            .item-note {
+                font-size: 12px;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr; /* 1열로 변경 */
+            }
+
+            .flow-diagram {
+                flex-direction: column; /* 수직 흐름으로 변경 */
+                gap: 8px;
+            }
+            .flow-arrow {
+                transform: rotate(90deg); /* 화살표 방향 변경 */
+            }
+
+            .flow-diagram .flow-step:last-of-type + .flow-arrow {
+                display: none; /* 마지막 화살표 숨기기 */
+            }
+        }
+
+        /* --- 인쇄용 스타일 (기존 스타일 유지 및 최적화) --- */
+        @media print {
+            body {
+                font-size: 11px;
+                margin: 0;
+                padding: 0;
+                background: none;
+            }
+            
+            .document {
+                padding: 10mm;
+                margin: 0;
+                max-width: none;
+                width: 100%;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .header {
+                margin-bottom: 15px;
+                padding: 15px;
+                page-break-after: avoid;
+            }
+            
+            .phase-section {
+                page-break-inside: avoid;
+                margin-bottom: 20px;
+            }
+            
+            .timeline-item {
+                page-break-inside: avoid;
+                margin-bottom: 8px;
+                padding: 10px;
+            }
+            
+            .phase-title {
+                page-break-after: avoid;
+                margin-bottom: 12px;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            
+            .summary-section {
+                page-break-before: auto;
+                page-break-inside: avoid;
+                margin-top: 20px;
+                padding: 15px;
+            }
+            
+            .flow-diagram {
+                page-break-after: avoid;
+                margin: 10px 0;
+                flex-direction: row; /* 인쇄 시에는 가로로 유지 */
+            }
+
+            .flow-arrow {
+                transform: rotate(0deg); /* 인쇄 시 화살표 원상복구 */
+            }
+            
+            /* 큰 섹션을 여러 페이지로 나누기 위한 추가 규칙 */
+            .phase-section:nth-child(4) {
+                page-break-before: page;
+            }
+            
+            .phase-section:nth-child(6) {
+                page-break-before: page;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="document">
+        <div class="header">
+            <h1>2025학년도 교육과정 업무 플로우</h1>
+            <p>선택과목 운영 및 관리 체계 (총 22단계)</p>
+        </div>
+
+        <div class="flow-diagram">
+            <div class="flow-step">1차 선호도 조사</div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step highlight">2차 최종신청</div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step highlight">2.5차 추가변경</div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step">완료</div>
+        </div>
+
+        <div class="phase-section">
+            <div class="phase-title">📋 1단계: 준비 및 기획 (3월~5월)</div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">1</div>
+                        <div class="item-date">3월~확정前</div>
+                    </div>
+                    <div class="item-manager">교무부장, 교무기획</div>
+                </div>
+                <div class="item-content">2024년 승인 고시 외 과목 파악</div>
+                <div class="item-note">상황에 따라 교육과정 변경 준비</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">2</div>
+                        <div class="item-date">3~4월</div>
+                    </div>
+                    <div class="item-manager">교육과정계</div>
+                </div>
+                <div class="item-content">2022 교육과정 및 본교 교육과정 파악(인수인계과정)</div>
+                <div class="item-note">인수인계 과정</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">3</div>
+                        <div class="item-date">5월</div>
+                    </div>
+                    <div class="item-manager">교무기획, 교육과정계</div>
+                </div>
+                <div class="item-content">수능 및 대입관련 자료 공유 및 선택과목 선택 가이드 구상</div>
+                <div class="item-note">교육과정팀 자체 연수</div>
+            </div>
+        </div>
+
+        <div class="phase-section">
+            <div class="phase-title">📝 2단계: 가정통신문 및 연수 (5월)</div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">4</div>
+                        <div class="item-date">5/2</div>
+                    </div>
+                    <div class="item-manager">교육과정계</div>
+                </div>
+                <div class="item-content">선택과목 가정통신문 초안 작성</div>
+                <div class="item-note">필요시 자료 공유</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">5</div>
+                        <div class="item-date">5/15</div>
+                    </div>
+                    <div class="item-manager">교육과정계</div>
+                </div>
+                <div class="item-content">선택과목 가정통신문 최종안 작성 및 담임&학부모 연수자료 작성</div>
+                <div class="item-note">필요시 자료 공유</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">6</div>
+                        <div class="item-date">5/20</div>
+                    </div>
+                    <div class="item-manager">교육과정계</div>
+                </div>
+                <div class="item-content">수강신청사이트 일괄가입(1학년) 및 아이디 배부</div>
+                <div class="item-note">구글 클래스 아이디 사용</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">7-8</div>
+                        <div class="item-date">5/21~5/22</div>
+                    </div>
+                    <div class="item-manager">교무기획, 교육과정계</div>
+                </div>
+                <div class="item-content">1학년, 2학년 담임 선택과목 연수</div>
+            </div>
+        </div>
+
+        <div class="phase-section">
+            <div class="phase-title">💻 3단계: 시스템 구축 및 1차 조사 (5월 말~6월)</div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">9</div>
+                        <div class="item-date">5/23</div>
+                    </div>
+                    <div class="item-manager">교육과정계</div>
+                </div>
+                <div class="item-content">수강신청사이트 프로그램 활용 연수 및 사전 세팅</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">10</div>
+                        <div class="item-date">5/26</div>
+                    </div>
+                    <div class="item-manager">교육과정계</div>
+                </div>
+                <div class="item-content">1, 2 학년 선택과목 가정통신문 발송</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">11</div>
+                        <div class="item-date">5/29</div>
+                    </div>
+                    <div class="item-manager">1학년부장, 교육과정팀</div>
+                </div>
+                <div class="item-content">1학년 학부모 정담회</div>
+            </div>
+            
+            <div class="timeline-item highlight">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">12-13</div>
+                        <div class="item-date">6/2~6/5</div>
+                    </div>
+                    <div class="item-manager">교육과정팀</div>
+                </div>
+                <div class="item-content">🎯 선택과목 선호도 조사 시작(1차) → 종료(1차)</div>
+            </div>
+        </div>
+
+        <div class="phase-section">
+            <div class="phase-title">📊 1차 조사 결과 분석</div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">14</div>
+                        <div class="item-date">6/11</div>
+                    </div>
+                    <div class="item-manager">교감, 교육과정팀</div>
+                </div>
+                <div class="item-content">선호도 조사 결과 분석, 개설과목 점검 및 확정, 교사 수요 파악</div>
+                <div class="item-note">올해는 고시외 과목(교양)을 신청하기로 함. 학생들이 과목의 내용을 알고 선택할 수 있도록 선호도 조사 전에 자료를 제공하고자 함. 하지만 교과서가 제대로 나와있지 않아 어려움이 예상됨.</div>
+            </div>
+        </div>
+
+        <div class="phase-section">
+            <div class="phase-title">🏫 4단계: 개학 준비 및 2차 조사 (방학 중~9월)</div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">15</div>
+                        <div class="item-date">방학중</div>
+                    </div>
+                    <div class="item-manager">교육과정팀</div>
+                </div>
+                <div class="item-content">2025입학생 기준 2학년 과목별 운영 및 평가 방법 파악(예정)</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">16</div>
+                        <div class="item-date">8/18</div>
+                    </div>
+                    <div class="item-manager">교육과정팀</div>
+                </div>
+                <div class="item-content">개학과 동시에 2026학년도 2학년 과목별 운영 및 평가 방법 안내</div>
+                <div class="item-note">예정(올해는 어려울수도)</div>
+            </div>
+            
+            <div class="timeline-item highlight">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">17-18</div>
+                        <div class="item-date">9/2~9/5</div>
+                    </div>
+                    <div class="item-manager">교육과정팀</div>
+                </div>
+                <div class="item-content">🎯 선택과목 최종신청 시작(2차) → 완료(2차)</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">19</div>
+                        <div class="item-date">9월 中</div>
+                    </div>
+                    <div class="item-manager">교무부장</div>
+                </div>
+                <div class="item-content">대략적인 분반 작업 완료</div>
+                <div class="item-note">학생들 반편성 및 교원수급 파악. 연말까지 학생들의 수강신청 변경 요청이 많은데 본 과정에서 확정된 분반의 틀 내에서만 변경 신청수용.</div>
+            </div>
+        </div>
+
+        <div class="phase-section">
+            <div class="phase-title">✅ 5단계: 교과서 주문 및 최종 확정 (9월~12월)</div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">20</div>
+                        <div class="item-date">9월 말~10월 초</div>
+                    </div>
+                    <div class="item-manager">교과서 담당</div>
+                </div>
+                <div class="item-content">교과서 주문</div>
+                <div class="item-note">교과서는 주문 기준은 최종신청(2차 조사) 기준 주문. 12월에 과목 변경하더라도 교과서는 기존대로 받으므로 개별 구매하도록 안내.</div>
+            </div>
+            
+            <div class="timeline-item highlight">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">21</div>
+                        <div class="item-date">12/29</div>
+                    </div>
+                    <div class="item-manager">교육과정팀</div>
+                </div>
+                <div class="item-content">🎯 추가 최종 변경 신청(2.5차)</div>
+                <div class="item-note">구글로 신청받고 선착순으로 순위 부여</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-left">
+                        <div class="item-order">22</div>
+                        <div class="item-date">12/31</div>
+                    </div>
+                    <div class="item-manager">교육과정팀</div>
+                </div>
+                <div class="item-content">추가 최종 변경 신청 완료(2.5차)</div>
+            </div>
+        </div>
+
+        <div class="summary-section">
+            <div class="summary-title">🎯 핵심 포인트 요약</div>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <h4>🔄 3단계 조사 시스템</h4>
+                    <p>1차 선호도 조사 → 2차 최종신청 → 2.5차 추가변경으로 단계적 접근</p>
+                </div>
+                <div class="summary-item">
+                    <h4>📚 체계적 정보 제공</h4>
+                    <p>가정통신문, 학부모 정담회, 담임 연수를 통한 충분한 정보 제공</p>
+                </div>
+                <div class="summary-item">
+                    <h4>💡 고시외 과목 신설</h4>
+                    <p>교양 과목 개설로 학생 선택권 확대</p>
+                </div>
+                <div class="summary-item">
+                    <h4>⚠️ 주요 과제</h4>
+                    <p>교과서 부족, 교원 수급, 분반 작업의 복잡성</p>
+                </div>
+                <div class="summary-item">
+                    <h4>🎯 성공 요인</h4>
+                    <p>부서간 협력, 체계적 진행, 지속적 모니터링</p>
+                </div>
+                <div class="summary-item">
+                    <h4>📈 기대 효과</h4>
+                    <p>학생 만족도 향상, 안정적 교육과정 운영</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function printDocument() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
