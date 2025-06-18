@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025학년도 학사일정</title>
+    <style>
+        /* 기본 스타일 */
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* 전체 컨테이너 */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        /* 인쇄 버튼 */
+        .print-button {
+            display: block;
+            width: 100px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+        }
+        .print-button:hover {
+            background-color: #2980b9;
+        }
+
+        /* 캘린더 그리드 */
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+        }
+
+        .month-title {
+            grid-column: 1 / -1; /* 7개 열 전체를 차지 */
+            text-align: center;
+            background-color: #ecf0f1;
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        
+        .day-header {
+            font-weight: bold;
+            text-align: center;
+            padding: 8px;
+            background-color: #bdc3c7;
+            color: white;
+        }
+
+        .day {
+            border: 1px solid #ddd;
+            padding: 8px;
+            min-height: 100px;
+            background-color: #fff;
+            position: relative;
+        }
+        
+        .day.empty {
+            background-color: #f9f9f9;
+        }
+
+        .day .date {
+            font-weight: bold;
+        }
+
+        .day .content {
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        
+        .day .holiday {
+            color: #e74c3c;
+        }
+
+        /* 요일별 색상 */
+        .day-header:nth-child(7n+1), .day:nth-child(7n+1) .date { color: #e74c3c; } /* 일요일 */
+        .day-header:nth-child(7n), .day:nth-child(7n) .date { color: #3498db; } /* 토요일 */
+
+        /* PC 화면과 모바일 화면의 디자인을 다르게 설정 (반응형) */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            .day {
+                min-height: 80px;
+                font-size: 0.8em;
+            }
+            .day .content {
+                font-size: 0.85em;
+            }
+        }
+        
+        /* 인쇄 시 적용될 스타일 */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .print-button {
+                display: none; /* 인쇄 버튼 숨기기 */
+            }
+            .container {
+                box-shadow: none;
+                border: none;
+            }
+             /* 페이지 나누기 (월별로) */
+            .month-grid {
+                page-break-after: always;
+            }
+            .month-grid:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>2025학년도 학사일정</h1>
+        <button class="print-button" onclick="window.print()">인쇄하기</button>
+
+        <div class="calendar-grid month-grid">
+            <div class="month-title">3월</div>
+            <div class="day-header">일</div><div class="day-header">월</div><div class="day-header">화</div><div class="day-header">수</div><div class="day-header">목</div><div class="day-header">금</div><div class="day-header">토</div>
+            <div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day"><span class="date">1</span><div class="content holiday">3.1절</div></div>
+            <div class="day"><span class="date">2</span></div><div class="day"><span class="date">3</span><div class="content holiday">대체공휴일</div></div><div class="day"><span class="date">4</span><div class="content">입학식, 개학식 (행사)</div></div><div class="day"><span class="date">5</span><div class="content">수1</div></div><div class="day"><span class="date">6</span><div class="content">목1</div></div><div class="day"><span class="date">7</span><div class="content">금1</div></div><div class="day"><span class="date">8</span></div>
+            <div class="day"><span class="date">9</span></div><div class="day"><span class="date">10</span><div class="content">월1</div></div><div class="day"><span class="date">11</span><div class="content">화1</div></div><div class="day"><span class="date">12</span><div class="content">수2</div></div><div class="day"><span class="date">13</span><div class="content">목2</div></div><div class="day"><span class="date">14</span><div class="content">금2</div></div><div class="day"><span class="date">15</span></div>
+            <div class="day"><span class="date">16</span></div><div class="day"><span class="date">17</span><div class="content">월2</div></div><div class="day"><span class="date">18</span><div class="content">화2</div></div><div class="day"><span class="date">19</span><div class="content">수3</div></div><div class="day"><span class="date">20</span><div class="content">목3</div></div><div class="day"><span class="date">21</span><div class="content">금3</div></div><div class="day"><span class="date">22</span></div>
+            <div class="day"><span class="date">23</span></div><div class="day"><span class="date">24</span><div class="content">월3</div></div><div class="day"><span class="date">25</span><div class="content">화3</div></div><div class="day"><span class="date">26</span><div class="content">수4 (7교시 4/25 2교시)</div></div><div class="day"><span class="date">27</span><div class="content">목4</div></div><div class="day"><span class="date">28</span><div class="content">금4</div></div><div class="day"><span class="date">29</span></div>
+            <div class="day"><span class="date">30</span></div><div class="day"><span class="date">31</span><div class="content">월4</div></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div>
+        </div>
+
+        <div class="calendar-grid month-grid">
+            <div class="month-title">4월</div>
+            <div class="day-header">일</div><div class="day-header">월</div><div class="day-header">화</div><div class="day-header">수</div><div class="day-header">목</div><div class="day-header">금</div><div class="day-header">토</div>
+            <div class="day empty"></div><div class="day empty"></div><div class="day"><span class="date">1</span><div class="content">화4</div></div><div class="day"><span class="date">2</span><div class="content">수5</div></div><div class="day"><span class="date">3</span><div class="content">목5</div></div><div class="day"><span class="date">4</span><div class="content">금5</div></div><div class="day"><span class="date">5</span></div>
+            <div class="day"><span class="date">6</span></div><div class="day"><span class="date">7</span><div class="content">월5</div></div><div class="day"><span class="date">8</span><div class="content">화5</div></div><div class="day"><span class="date">9</span><div class="content">수6</div></div><div class="day"><span class="date">10</span><div class="content">목6</div></div><div class="day"><span class="date">11</span><div class="content">금6</div></div><div class="day"><span class="date">12</span></div>
+            <div class="day"><span class="date">13</span></div><div class="day"><span class="date">14</span><div class="content">월6</div></div><div class="day"><span class="date">15</span><div class="content">화6</div></div><div class="day"><span class="date">16</span><div class="content">수7</div></div><div class="day"><span class="date">17</span><div class="content">목7</div></div><div class="day"><span class="date">18</span><div class="content">금7</div></div><div class="day"><span class="date">19</span></div>
+            <div class="day"><span class="date">20</span></div><div class="day"><span class="date">21</span><div class="content">월7</div></div><div class="day"><span class="date">22</span><div class="content">화7</div></div><div class="day"><span class="date">23</span><div class="content">수8</div></div><div class="day"><span class="date">24</span><div class="content">목8</div></div><div class="day"><span class="date">25</span><div class="content">금8 (2교시 3/26 7교시)</div></div><div class="day"><span class="date">26</span></div>
+            <div class="day"><span class="date">27</span></div><div class="day"><span class="date">28</span><div class="content">중간고사</div></div><div class="day"><span class="date">29</span><div class="content">중간고사</div></div><div class="day"><span class="date">30</span><div class="content">중간고사</div></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div>
+        </div>
+
+        </div>
+
+    <script>
+        // 이 페이지에는 JavaScript가 인쇄 기능 외에는 특별히 필요하지 않습니다.
+        // 모든 로직은 HTML과 CSS로 처리됩니다.
+    </script>
+
+</body>
+</html>
