@@ -3,280 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고교학점제 운영사례 나눔</title>
+    <title>자료 다운로드</title>
     <style>
+        /* 페이지 전체 스타일 */
         body {
-            font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
-            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 20px 0;
+            background-color: #f4f7f6;
+            font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
         }
 
-        .slideshow-container {
-            max-width: 800px;
-            position: relative;
-            margin: auto;
+        /* 콘텐츠를 담을 컨테이너 */
+        .container {
+            text-align: center;
+            padding: 40px;
             background-color: white;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            border: 1px solid #ddd;
-        }
-
-        .slide {
-            display: none;
-            padding: 20px 50px 50px 50px;
-            text-align: left;
-            min-height: 600px;
-            line-height: 1.8;
-        }
-
-        .slide img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-        }
-
-        .slide h1, .slide h2, .slide h3 {
-             text-align: center;
-             color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
         
-        .slide h1 { font-size: 2em; margin-bottom: 40px;}
-        .slide h2 { font-size: 1.5em; margin-top: 30px; }
-        .slide h3 { font-size: 1.2em; margin-top: 25px; }
-
-        .slide table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 0.9em;
-        }
-        
-        .slide th, .slide td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        
-        .slide th {
-            background-color: #f2f2f2;
-        }
-        
-        .slide .left-align {
-            text-align: left;
-        }
-
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 24px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            background-color: rgba(0,0,0,0.3);
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.6);
-        }
-
-        .page-number {
+        h1 {
             color: #333;
-            font-size: 14px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-        }
-        
-        .fade {
-            animation-name: fade;
-            animation-duration: 0.5s;
+            margin-bottom: 30px;
         }
 
-        @keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
+        /* 다운로드 버튼 스타일 */
+        .download-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        /* 마우스를 올렸을 때 버튼 스타일 */
+        .download-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px); /* 살짝 위로 움직이는 효과 */
         }
     </style>
 </head>
 <body>
 
-    <div class="slideshow-container">
-
-        <div class="slide">
-            <br><br><br>
-            <h1>고교학점제 운영사례 나눔 </h1>
-            <h2>꾸역꾸역 고교학점제 2 </h2>
-            <br><br><br><br>
-            <p style="text-align:center;"><strong>일시:</strong> 2025년 6월 18일 </p>
-            <p style="text-align:center;"><strong>장소:</strong> 신목고등학교 도서관 </p>
-            <br><br>
-            <h3 style="text-align:right;">신목고 서형순 </h3>
-        </div>
-
-        <div class="slide">
-            <img src="https://storage.googleapis.com/prompt-lab-images/image-2-2024-06-18.png" alt="고민하는 모습">
-            <h2>Chapter 01 : 고민문제 </h2>
-            <h3>교무장님, 이런 고민하시나요? </h3>
-            <ul>
-                <li>최소성취수준 보장지도 보충 추가 학습 </li>
-                <li>현 고1 학교생활기록부 기록, 관리 </li>
-                <li>2022 교육과정 변경 학생 선택과목 안내 </li>
-            </ul>
-        </div>
-
-        <div class="slide">
-            <img src="https://storage.googleapis.com/prompt-lab-images/image-3-2024-06-18.png" alt="시간을 옮기는 모습">
-            <h2>Q1. 최소성취수준 보장지도 </h2>
-            <h3>운영사례 </h3>
-            <p style="text-align:center;">학점이수 인정기준에 따른 상황별 지도 유형 </p>
-        </div>
-
-        <div class="slide">
-            <h3>학점이수 인정기준에 따른 상황별 지도 유형 </h3>
-            <table>
-              <thead>
-                <tr><th>상황 </th><th>출석률 </th><th>학업성취율 </th><th>지원유형 </th><th>비고 </th></tr>
-              </thead>
-              <tbody>
-                <tr><td>A </td><td>도달 </td><td>도달 </td><td>학점이수 </td><td></td></tr>
-                <tr><td>B </td><td>도달 </td><td>미도달 </td><td>보충지도 </td><td></td></tr>
-                <tr><td>C </td><td>미도달 </td><td>도달 </td><td>추가학습 </td><td>학점당 5시수 </td></tr>
-                <tr><td>D </td><td>미도달 </td><td>미도달 </td><td>보충지도 </td><td></td></tr>
-              </tbody>
-            </table>
-
-            <h3>학업성취율 미도달 학생 해결방안 </h3>
-            <ul>
-                <li>추정분할 점수, 수행평가 점수 </li>
-                <li>1학년 교과목의 시수 부족 체크 (1학점*16시수=16시수, 2학점*16시수=32시수 등) </li>
-                <li>기말고사 이후 요일시간표 변경 </li>
-                <li>수업 이동 </li>
-                <li>방학식 수업 </li>
-                <li>보강 처리 </li>
-                <li>학력평가일 시간표 재편성 </li>
-            </ul>
-
-            <h3>추정분할점수 안내 </h3>
-            <p class="left-align">교과에 들어가는 전교사가 참여하여 문항정보표를 완성 후 [지필평가 추정분할점수 산출관리]에서 [예상정답률 입력]을 마감합니다.  그 후, 분할점수 관리 화면에서 점수를 입력하고 구글 시트에 입력합니다. </p>
-            
-            <table>
-              <thead>
-                <tr><th>연번 </th><th>과목 </th><th>단위수 </th><th>A/B </th><th>B/C </th><th>C/D </th><th>D/E </th><th>E/미도달 </th></tr>
-              </thead>
-              <tbody>
-                <tr><td>1</td><td>공통국어1 </td><td>3 </td><td>85.98 </td><td>70.98 </td><td>45.67 </td><td>20.67 </td><td>9.69 </td></tr>
-                <tr><td>2</td><td>공통영어1 </td><td>3 </td><td>65.76 </td><td>46.56 </td><td>27.36 </td><td>12.38 </td><td>4.68 </td></tr>
-                <tr><td>3</td><td>공통수학1 </td><td>3 </td><td>70.22 </td><td>53.67 </td><td>37.12 </td><td>21.43 </td><td>9.55 </td></tr>
-                <tr><td>4</td><td>통합사회1 </td><td>4 </td><td>80.25 </td><td>64.78 </td><td>40.25 </td><td>20.84 </td><td>9.82 </td></tr>
-                <tr><td>5</td><td>한국사 </td><td>3 </td><td>79.17 </td><td>64.84 </td><td>41.89 </td><td>22.22 </td><td>8.44 </td></tr>
-                <tr><td>6</td><td>통합과학1 </td><td>4 </td><td>87.54 </td><td>74.61 </td><td>54.61 </td><td>24.61 </td><td>4.61 </td></tr>
-                <tr><td>7</td><td>기술가정 </td><td>3 </td><td>70.49 </td><td>50.49 </td><td>25.49 </td><td>15.49 </td><td>10.49 </td></tr>
-              </tbody>
-            </table>
-        </div>
-
-        <div class="slide">
-            <h3>나이스: 반별 과목 출결 현황 </h3>
-            <p>학적 권한으로 '반별과목출결현황' 메뉴에서 조회할 수 있습니다.  이 화면은 '일출결' 마감일을 기준으로 조회됩니다. </p>
-            <table>
-              <thead>
-                <tr>
-                    <th>번호 </th>
-                    <th>성명 </th>
-                    <th>과목명 </th>
-                    <th>총 수업시수 </th>
-                    <th>현재 수업시수 </th>
-                    <th>출석시수 </th>
-                    <th>결과시수 </th>
-                    <th>이수기준 충족 여부 </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td>1</td><td>권우진 </td><td>공통국어1 </td><td>50 </td><td>35 </td><td>34 </td><td>1 </td><td>충족 </td></tr>
-                <tr><td>2</td><td>김나연 </td><td>공통수학1 </td><td>51 </td><td>37 </td><td>37 </td><td>0 </td><td>충족 </td></tr>
-                <tr><td>3</td><td>김보윤 </td><td>공통영어1 </td><td>51 </td><td>38 </td><td>38 </td><td>0 </td><td>충족 </td></tr>
-                <tr><td>4</td><td>김서정 </td><td>과학탐구실험1 </td><td>16 </td><td>11 </td><td>10 </td><td>1 </td><td>충족 </td></tr>
-                <tr><td>5</td><td>김시은 </td><td>기술·가정 </td><td>49 </td><td>36 </td><td>36 </td><td>0 </td><td>충족 </td></tr>
-                </tbody>
-            </table>
-             <p>※ 2025학년도 2, 3학년 공동교육과정 과목출결 및 위탁 과목출결 자료는 포함되지 않습니다. </p>
-        </div>
-
-        <div class="slide">
-            <h2>최소 성취수준 보장지도 관리 업무 흐름도 </h2>
-            <h3>사전업무 </h3>
-            <p class="left-align"><b>[1단계] 과목 출석률 마감</b> <br>
-            교과담임이 [교과담임-학적-출결관리-과목별출결관리-학기별과목출결마감]에서 강의실별로 마감합니다.  '과목교시마감수'와 '시간표총수업수'가 같아야 마감할 수 있습니다.  이후 업무담당자가 전체마감 후 승인을 요청합니다. </p>
-            <p class="left-align"><b>[2단계] 학기말 성적 산출 마감</b> <br>
-            성적 업무담당자가 [성적-성적처리-성적산출마감관리]에서 성적산출 전체마감 후 승인을 요청하여 결재를 완료합니다. </p>
-        </div>
-        
-        <div class="slide">
-            <h2>최소 성취수준 보장지도 관리 업무 흐름도 </h2>
-            <h3>관리 </h3>
-            <p class="left-align"><b>[3단계] 대상자 가져오기:</b> [성적-...-대상자]에서 대상자가져오기를 합니다. </p>
-            <p class="left-align"><b>[4단계] 예외처리 대상자 등록:</b> [성적-...-예외처리]에서 예외처리 대상 학생을 등록합니다. </p>
-            <p class="left-align"><b>[5단계] 대상자 이수여부 처리:</b> [성적-...-이수관리]에서 참여 시수를 등록하여 이수 여부를 정합니다. </p>
-            <p class="left-align"><b>[6단계] 최성보 마감 관리:</b> [성적-...-마감]에서 학적반영 후 마감합니다. </p>
-            <p class="left-align"><b>[7단계] 학교생활기록부 자료반영:</b> [학급담임-학생부-...-학생부반영]에서 교과학습발달상황을 반영합니다. </p>
-            <p class="left-align"><b>[8단계] 최성보 업무 상신:</b> [성적-...-마감관리]에서 마감정보 저장 후 승인 요청합니다. </p>
-        </div>
-        
-        <div class="slide">
-            <img src="https://storage.googleapis.com/prompt-lab-images/image-35-2024-06-18.png" alt="메일 보내는 모습">
-            <h2>Chapter 05: 문의사항 </h2>
-            <h3>THANK YOU! </h3>
-            <p style="text-align:center;"><b>TIP</b> </p>
-            <ol style="text-align:center; list-style-position: inside;">
-                <li>중,고등학교 교무부장 카카오톡 오픈채팅방 코드 EVPN </li>
-                <li>교육과정부(고등학교) 정보공유방 카카오톡 오픈채팅방 </li>
-            </ol>
-            <p style="text-align:right;">신목고 교무부장 서형순 </p>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <div class="page-number"><span id="page-indicator"></span></div>
+    <div class="container">
+        <h1>고교학점제 운영사례 자료</h1>
+        <a href="https://github.com/juvilan/kangyanggosu/raw/main/kangyang20250618.pdf"
+           class="download-button"
+           download="고교학점제_운영사례(신목고_서형순).pdf">
+            PDF 파일 다운로드
+        </a>
     </div>
-
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            let pageIndicator = document.getElementById("page-indicator");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            
-            slides[slideIndex-1].style.display = "block";
-            pageIndicator.innerHTML = slideIndex + " / " + slides.length;
-        }
-    </script>
 
 </body>
 </html>
